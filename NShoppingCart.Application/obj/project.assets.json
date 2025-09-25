@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "NShoppingCart.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/NShoppingCart.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NShoppingCart.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "NShoppingCart.Core/1.0.0": {
+      "type": "project",
+      "path": "../NShoppingCart.Core/NShoppingCart.Core.csproj",
+      "msbuildProject": "../NShoppingCart.Core/NShoppingCart.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "NShoppingCart.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\MC\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj": {
+              "projectPath": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7Ikiwh9HKTM=",
+  "dgSpecHash": "r8fx++cBQ30=",
   "success": true,
-  "projectFilePath": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Api\\NShoppingCart.Api.csproj",
+  "projectFilePath": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Api\\NShoppingCart.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MC\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\MC\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",

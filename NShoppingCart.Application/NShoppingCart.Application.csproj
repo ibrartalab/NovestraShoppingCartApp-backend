@@ -13,4 +13,8 @@
     <Folder Include="Services\Interfaces\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NShoppingCart.Core\NShoppingCart.Core.csproj" />
+  </ItemGroup>
+
 </Project>

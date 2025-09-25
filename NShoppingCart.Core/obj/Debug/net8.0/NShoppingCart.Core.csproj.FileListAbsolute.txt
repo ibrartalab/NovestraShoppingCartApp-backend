@@ -1,0 +1,5 @@
+c:\Users\MC\OneDrive\Desktop\Novestra\Projects\NovestraShoppingCartApp\NovestraShoppingCartApp-backend\NShoppingCart.Core\obj\Debug\net8.0\NShoppingCart.Core.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\MC\OneDrive\Desktop\Novestra\Projects\NovestraShoppingCartApp\NovestraShoppingCartApp-backend\NShoppingCart.Core\obj\Debug\net8.0\NShoppingCart.Core.AssemblyInfoInputs.cache
+c:\Users\MC\OneDrive\Desktop\Novestra\Projects\NovestraShoppingCartApp\NovestraShoppingCartApp-backend\NShoppingCart.Core\obj\Debug\net8.0\NShoppingCart.Core.AssemblyInfo.cs
+c:\Users\MC\OneDrive\Desktop\Novestra\Projects\NovestraShoppingCartApp\NovestraShoppingCartApp-backend\NShoppingCart.Core\obj\Debug\net8.0\NShoppingCart.Core.csproj.CoreCompileInputs.cache
+c:\Users\MC\OneDrive\Desktop\Novestra\Projects\NovestraShoppingCartApp\NovestraShoppingCartApp-backend\NShoppingCart.Core\obj\Debug\net8.0\NShoppingCart.Core.sourcelink.json
