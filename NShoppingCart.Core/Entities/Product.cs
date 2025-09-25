@@ -23,34 +23,11 @@ namespace NShoppingCart.Core.Entities
         [Required]
         [Range(0, int.MaxValue, ErrorMessage = "Stock must be greater than or equal to 0")]
         public int Stock { get; set; }
-
-        [Column(TypeName = "decimal(18,2)")]
-        public decimal? DiscountPrice { get; set; }
-
-        public DateTime? DiscountValidUntil { get; set; }
-
-        [Range(0, 5)]
-        public double AverageRating { get; set; } = 0;
-
-        public int ReviewCount { get; set; } = 0;
-
-        // Foreign Key
-        [Required]
-        public int CategoryId { get; set; }
+        public string? Category { get; set; }
 
         // Navigation properties
-        public Category Category { get; set; } = null!;
         public ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
         public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
-
-        // Computed properties
-        public decimal CurrentPrice => DiscountPrice.HasValue && DiscountValidUntil > DateTime.UtcNow
-            ? DiscountPrice.Value
-            : Price;
-
-        public bool IsInStock => Stock > 0;
-
-        public bool IsOnSale => DiscountPrice.HasValue && DiscountValidUntil > DateTime.UtcNow;
     }
 
 }

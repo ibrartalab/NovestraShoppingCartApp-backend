@@ -5,23 +5,23 @@ namespace NShoppingCart.Core.Entities
     public class User : BaseEntity
 {
     [Required]
-    [StringLength(255)]
+    [StringLength(50)]
     [EmailAddress]
     public string Email { get; set; } = string.Empty;
 
     [Required]
-    [StringLength(100)]
+    [StringLength(50)]
     public string FirstName { get; set; } = string.Empty;
 
     [Required]
-    [StringLength(100)]
+    [StringLength(50)]
     public string LastName { get; set; } = string.Empty;
 
     [Required]
     public string PasswordHash { get; set; } = string.Empty;
 
-    [StringLength(50)]
-    public string Role { get; set; } = "User"; // User, Admin
+    [StringLength(10)]
+    public string Role { get; set; } = UserRole.User; // User, Admin
 
     [StringLength(20)]
     public string? PhoneNumber { get; set; }
@@ -33,9 +33,6 @@ namespace NShoppingCart.Core.Entities
     // Navigation properties
     public Cart? Cart { get; set; }
     public ICollection<Order> Orders { get; set; } = new List<Order>();
-
-    // Computed properties
-    public string FullName => $"{FirstName} {LastName}";
 }
 }
 
