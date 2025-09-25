@@ -1,8 +1,10 @@
 using System.ComponentModel.DataAnnotations;
+using NShoppingCart.Core.Enums;
 
-namespace NShoppingCart.Core.Entities
-{
-    public class User : BaseEntity
+
+namespace NShoppingCart.Core.Entities;
+
+public class User : BaseEntity
 {
     [Required]
     [StringLength(50)]
@@ -33,6 +35,5 @@ namespace NShoppingCart.Core.Entities
     // Navigation properties
     public Cart? Cart { get; set; }
     public ICollection<Order> Orders { get; set; } = new List<Order>();
-}
 }
 
