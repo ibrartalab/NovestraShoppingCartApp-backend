@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj": {}
+    "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj": {}
   },
   "projects": {
-    "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj": {
+    "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj",
+        "projectUniqueName": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj",
         "projectName": "NShoppingCart.Core",
-        "projectPath": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj",
+        "projectPath": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj",
         "packagesPath": "C:\\Users\\MC\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\obj\\",
+        "outputPath": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

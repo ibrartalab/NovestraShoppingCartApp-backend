@@ -2,7 +2,7 @@ using System;
 
 namespace NShoppingCart.Core.Interfaces;
 
-public class IOrderRepository
+public interface IOrderRepository
 {
     
 }

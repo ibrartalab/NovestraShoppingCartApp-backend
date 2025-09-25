@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using NShoppingCart.Core.Enums;
 using NShoppingCart.Core.Entities;
 
-namespace NShoppingCart;
+namespace NShoppingCart.Core.Entities;
 
 public class Order : BaseEntity
 {

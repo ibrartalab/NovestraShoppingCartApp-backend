@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Api\\NShoppingCart.Api.csproj": {}
+    "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Api\\NShoppingCart.Api.csproj": {}
   },
   "projects": {
-    "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Api\\NShoppingCart.Api.csproj": {
+    "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Api\\NShoppingCart.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Api\\NShoppingCart.Api.csproj",
+        "projectUniqueName": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Api\\NShoppingCart.Api.csproj",
         "projectName": "NShoppingCart.Api",
-        "projectPath": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Api\\NShoppingCart.Api.csproj",
+        "projectPath": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Api\\NShoppingCart.Api.csproj",
         "packagesPath": "C:\\Users\\MC\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Api\\obj\\",
+        "outputPath": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -35,8 +35,8 @@
               "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Application\\NShoppingCart.Application.csproj": {
                 "projectPath": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Application\\NShoppingCart.Application.csproj"
               },
-              "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\NShoppingCart.Infrastructure.csproj": {
-                "projectPath": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\NShoppingCart.Infrastructure.csproj"
+              "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\NShoppingCart.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\NShoppingCart.Infrastructure.csproj"
               }
             }
           }
@@ -57,6 +57,16 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -113,8 +123,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj": {
-                "projectPath": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj"
+              "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj": {
+                "projectPath": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj"
               }
             }
           }
@@ -154,14 +164,14 @@
         }
       }
     },
-    "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj": {
+    "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj",
+        "projectUniqueName": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj",
         "projectName": "NShoppingCart.Core",
-        "projectPath": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj",
+        "projectPath": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj",
         "packagesPath": "C:\\Users\\MC\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\obj\\",
+        "outputPath": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -219,14 +229,14 @@
         }
       }
     },
-    "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\NShoppingCart.Infrastructure.csproj": {
+    "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\NShoppingCart.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\NShoppingCart.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\NShoppingCart.Infrastructure.csproj",
         "projectName": "NShoppingCart.Infrastructure",
-        "projectPath": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\NShoppingCart.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\NShoppingCart.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\MC\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -247,8 +257,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj": {
-                "projectPath": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj"
+              "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Application\\NShoppingCart.Application.csproj": {
+                "projectPath": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Application\\NShoppingCart.Application.csproj"
+              },
+              "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj": {
+                "projectPath": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj"
               }
             }
           }
@@ -268,6 +281,22 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

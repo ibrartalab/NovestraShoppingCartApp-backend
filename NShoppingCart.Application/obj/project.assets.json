@@ -58,8 +58,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj": {
-              "projectPath": "c:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj"
+            "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj": {
+              "projectPath": "C:\\Users\\MC\\OneDrive\\Desktop\\Novestra\\Projects\\NovestraShoppingCartApp\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj"
             }
           }
         }

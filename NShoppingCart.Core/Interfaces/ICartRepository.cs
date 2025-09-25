@@ -1,8 +1,8 @@
-using System;
+
 
 namespace NShoppingCart.Core.Interfaces;
 
-public class ICartRepository
+public interface ICartRepository
 {
-    
+
 }
