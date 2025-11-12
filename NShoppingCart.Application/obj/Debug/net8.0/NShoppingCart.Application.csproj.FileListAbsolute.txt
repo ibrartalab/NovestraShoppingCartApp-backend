@@ -1,0 +1,16 @@
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Application\bin\Debug\net8.0\NShoppingCart.Application.deps.json
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Application\bin\Debug\net8.0\NShoppingCart.Application.dll
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Application\bin\Debug\net8.0\NShoppingCart.Application.pdb
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Application\bin\Debug\net8.0\NShoppingCart.Core.dll
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Application\bin\Debug\net8.0\NShoppingCart.Core.pdb
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Application\obj\Debug\net8.0\NShoppingCart.Application.csproj.AssemblyReference.cache
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Application\obj\Debug\net8.0\NShoppingCart.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Application\obj\Debug\net8.0\NShoppingCart.Application.AssemblyInfoInputs.cache
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Application\obj\Debug\net8.0\NShoppingCart.Application.AssemblyInfo.cs
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Application\obj\Debug\net8.0\NShoppingCart.Application.csproj.CoreCompileInputs.cache
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Application\obj\Debug\net8.0\NShoppingCart.Application.sourcelink.json
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Application\obj\Debug\net8.0\NShoppin.B6594CFE.Up2Date
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Application\obj\Debug\net8.0\NShoppingCart.Application.dll
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Application\obj\Debug\net8.0\refint\NShoppingCart.Application.dll
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Application\obj\Debug\net8.0\NShoppingCart.Application.pdb
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Application\obj\Debug\net8.0\ref\NShoppingCart.Application.dll

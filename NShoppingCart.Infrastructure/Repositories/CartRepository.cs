@@ -1,78 +1,51 @@
 using Microsoft.EntityFrameworkCore;
 using NShoppingCart.Core.Entities;
-using NShoppingCart.Core.Interfaces;
 using NShoppingCart.Infrastructure.Data;
 
-namespace NShoppingCart.Infrastructure.Repositories;
-
-public class CartRepository : ICartRepository
+namespace NShoppingCart
 {
-    private readonly NShoppingCartDbContext _dbContext;
-
-    public CartRepository(NShoppingCartDbContext dbContext)
+    public class CartRepository : ICartRepository
     {
-        _dbContext = dbContext;
-    }
-    public async Task<Cart?> GetOrCreateCartByUserIdAsync(int userId)
-    {
-        var cart = await _dbContext.Carts
-                                    .Include(c => c.CartItems)
-                                    .FirstOrDefaultAsync(u => u.UserId == userId);
-
-
-        if (cart == null)
+        private readonly NShoppingCartDbContext _dbContext;
+        public CartRepository(NShoppingCartDbContext dbContext)
         {
-            cart = new Cart { UserId = userId };
-            _dbContext.Carts.Add(cart);
+            _dbContext = dbContext;
+        }
+
+        public async Task<CartItem?> GetCartItemByIdAsync(int id)
+        {
+            return await _dbContext.CartItems.FirstOrDefaultAsync(c => c.Id == id);
+        }
+
+        public async Task<IEnumerable<CartItem>> GetCartItemsByCartIdAsync(int cartId)
+        {
+            return await _dbContext.CartItems.Where(c => c.CartId == cartId).ToListAsync();
+        }
+
+        public async Task<CartItem> CreateCartItemAsync(CartItem cartItem)
+        {
+            await _dbContext.CartItems.AddAsync(cartItem);
 
             await _dbContext.SaveChangesAsync();
+
+            return cartItem;
         }
 
-        return cart;
-    }
-
-    public async Task<string> AddItemToCartAsync(int userId, int productId, int quantity)
-    {
-        var cart = await GetOrCreateCartByUserIdAsync(userId);
-
-        var existingCartItem = cart?.CartItems.FirstOrDefault(c => c.ProductId == productId);
-
-        if (existingCartItem is not null)
+        public async Task<bool> DeleteCartItemAsync(int id)
         {
-            return "Product alrady in your cart!";
-        }
+            var cartItem = await _dbContext.CartItems.FirstAsync(c => c.Id == id);
 
-        var newCartItem = new CartItem
-        {
-            CartId = cart.Id,
-            ProductId = productId,
-            Quantity = quantity
-        };
-
-        _dbContext.CartItems.Add(newCartItem);
-
-        await _dbContext.SaveChangesAsync();
-
-        return "Item has been successfully added to your cart";
-    }
-
-    public async Task<CartItem?> UpdateCartItemAsync(int userId, int productId, int quantity)
-    {
-        var cart = await GetOrCreateCartByUserIdAsync(userId);
-
-        var existingCartItem = cart?.CartItems.FirstOrDefault(c => c.ProductId == productId);
-
-        if (existingCartItem != null)
-        {
-            existingCartItem.Quantity += quantity;
-
-            if (existingCartItem.Quantity <= 0)
+            if (cartItem == null)
             {
-                cart?.CartItems.Remove(existingCartItem);
+                return false;
             }
+
+            _dbContext.CartItems.Remove(cartItem);
+
+            int ch = await _dbContext.SaveChangesAsync();
+
+            return ch > 0;
         }
 
-        await _dbContext.SaveChangesAsync();
-        return existingCartItem;
     }
 }

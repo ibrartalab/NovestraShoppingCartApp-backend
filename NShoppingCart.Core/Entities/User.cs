@@ -33,7 +33,6 @@ public class User : BaseEntity
     public DateTime? LastLoginAt { get; set; }
 
     // Navigation properties
-    public Cart? Cart { get; set; }
     public ICollection<Order> Orders { get; set; } = new List<Order>();
 }
 

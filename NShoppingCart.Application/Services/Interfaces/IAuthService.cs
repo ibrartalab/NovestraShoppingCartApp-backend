@@ -1,4 +1,5 @@
 using System;
+using NShoppingCart.Application.DTOs;
 
 namespace NShoppingCart.Application.Services.Interfaces;
 

@@ -1,9 +1,81 @@
 using System;
+using NShoppingCart.Application.DTOs;
 using NShoppingCart.Application.Services.Interfaces;
+using NShoppingCart.Core.Interfaces;
+using NShoppingCart.Infrastructure.ExternalServices.JwtGeneration;
+using BCrypt.Net;
 
 namespace NShoppingCart.Application.Services.Implementations;
 
-public class AuthService : IAuthService
+public class AuthService(IUserRepository userRepository, IJwtService jwtService) : IAuthService
 {
+    private string HashPassword(string password)
+    {
+        // Simple hash for demonstration purposes only. Use a secure hashing algorithm in production.
+        var hasedPass = BCrypt.Net.BCrypt.HashPassword(password);
+        return hasedPass;
+    }
 
+    private bool VerifyPassword(string password, string passwordHash)
+    {
+        var hashedPassword = HashPassword(password);
+        return BCrypt.Net.BCrypt.Verify(password, passwordHash);
+    }
+
+    public async Task<AuthResponseDto> RegisterUser(RegisterRequestDto registerRequestDto)
+    {
+        var existingUser = await userRepository.GetUserByEmailAsync(registerRequestDto.Email);
+
+        if (existingUser is not null)
+        {
+            throw new Exception("User with this email already exists.");
+        }
+        var newUser = new Core.Entities.User
+        {
+            Email = registerRequestDto.Email,
+            FirstName = registerRequestDto.FirstName,
+            LastName = registerRequestDto.LastName,
+            PasswordHash = HashPassword(registerRequestDto.Password),
+            Role = "User",
+            IsActive = true
+        };
+
+        await userRepository.AddUserAsync(newUser);
+        var token = await jwtService.GenerateToken(newUser);
+        return new AuthResponseDto
+        {
+            Token = token,
+            User = new UserDto
+            {
+                Id = newUser.Id,
+                Email = newUser.Email,
+                FirstName = newUser.FirstName,
+                LastName = newUser.LastName
+            }
+        };
+    }
+
+    public async Task<AuthResponseDto> LoginUser(LoginRequestDto loginRequest)
+    {
+        var user = await userRepository.GetUserByEmailAsync(loginRequest.Email);
+
+        if (user is null || !VerifyPassword(loginRequest.Password, user.PasswordHash))
+        {
+            throw new Exception("Invalid email or password.");
+        }
+
+        var token = await jwtService.GenerateToken(user);
+
+        return new AuthResponseDto
+        {
+            Token = token,
+            User = new UserDto
+            {
+                Id = user.Id,
+                Email = user.Email,
+                FirstName = user.FirstName,
+                LastName = user.LastName
+            }
+        };
+    }
 }
