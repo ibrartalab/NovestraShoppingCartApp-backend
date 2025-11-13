@@ -6,7 +6,10 @@ public interface ICartService
 {
     Task ClearCart(int userId);
 
-    Task<CartDto> GetCartByUserId(int userId);
+    Task<Cart> GetCartByUserId(int userId);
 
-    Task<CartDto> AddItemToCart(int userId, int productId, int quantity);
+    Task<Cart> AddItemToCart(int userId, int productId, int quantity);
+    Task<Cart> UpdateCartItem(int userId, int productId, int quantity);
+    Task<Cart> RemoveItemFromCart(int userId, int productId);
+    
 }
