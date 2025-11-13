@@ -4,16 +4,19 @@ namespace NShoppingCart
 {
     public interface ICartRepository
     {
-        Task<CartItem?> GetCartItemByIdAsync(int id);
-        Task<IEnumerable<CartItem>> GetCartItemsByCartIdAsync(int cartId);
-        Task<CartItem> CreateCartItemAsync(CartItem cartItem);
-        Task<bool> DeleteCartItemAsync(int id);
-        Task<bool> UpdateCartItemAsync(CartItem cartItem);
-        Task<bool> ClearCartAsync(int cartId);
-        Task<bool> AddItemToCartAsync(int cartId, CartItem cartItem);
-        Task<Cart?> GetCartByUserIdAsync(int userId);
+        // Cart (container) operations
+        Task<Cart?> GetCartByUserIdAsync(Guid userId);
+        Task<Cart> GetOrCreateCartByUserIdAsync(Guid userId);
         Task<Cart> CreateCartAsync(Cart cart);
-        Task<bool> UpdateCartAsync(Cart cart);
-        Task<bool> DeleteCartAsync(int cartId);
+        Task<bool> DeleteCartAsync(Guid cartId);
+        Task<bool> ClearCartAsync(Guid cartId);
+
+        // CartItem operations
+        Task<IEnumerable<CartItem>> GetCartItemsByCartIdAsync(Guid cartId);
+        Task<CartItem?> GetCartItemByIdAsync(Guid cartItemId);
+        Task<CartItem?> GetCartItemAsync(Guid cartId, Guid productId); // helpful for checking duplicates
+        Task<CartItem> AddItemToCartAsync(Guid cartId, CartItem cartItem);
+        Task<bool> UpdateCartItemAsync(CartItem cartItem);
+        Task<bool> DeleteCartItemAsync(Guid cartItemId);
     }
 }
