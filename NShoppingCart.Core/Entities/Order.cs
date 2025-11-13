@@ -8,7 +8,7 @@ namespace NShoppingCart.Core.Entities;
 public class Order : BaseEntity
 {
     [Required]
-    public int UserId { get; set; }
+    public Guid UserId { get; set; }
 
     [Required]
     [StringLength(50)]

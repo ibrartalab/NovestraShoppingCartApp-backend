@@ -14,11 +14,11 @@ public class OrderRepository : IOrderRepository
     {
         _dbContext = dbContext;
     }
-    public async Task<Order?> GetOrderByIdAsync(int id)
+    public async Task<Order?> GetOrderByIdAsync(Guid id)
     {
         return await _dbContext.Orders.FirstOrDefaultAsync(o => o.Id == id);
     }
-    public async Task<IEnumerable<Order>> GetOrdersByUserIdAsync(int userId)
+    public async Task<IEnumerable<Order>> GetOrdersByUserIdAsync(Guid userId)
     {
         return await _dbContext.Orders.Where(o => o.UserId == userId).ToListAsync();
     }
@@ -34,7 +34,7 @@ public class OrderRepository : IOrderRepository
 
         return order;
     }
-    public async Task<string> UpdateOrderStatus(int orderId, string newStatus)
+    public async Task<string> UpdateOrderStatus(Guid orderId, string newStatus)
     {
         var exOrder = await _dbContext.Orders.FirstOrDefaultAsync(o => o.Id == orderId);
 
@@ -49,7 +49,7 @@ public class OrderRepository : IOrderRepository
 
         return "Your order status has been updated successfully!";
     }
-    public async Task<bool> DeleteOrderById(int id)
+    public async Task<bool> DeleteOrderById(Guid id)
     {
         var exOrder = await _dbContext.Orders.FirstOrDefaultAsync(o => o.Id == id);
 

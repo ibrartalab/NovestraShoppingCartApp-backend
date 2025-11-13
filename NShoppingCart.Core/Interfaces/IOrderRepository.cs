@@ -5,10 +5,10 @@ namespace NShoppingCart.Core.Interfaces;
 
 public interface IOrderRepository
 {
-    Task<Order> GetOrderByIdAsync(int id);
-    Task<IEnumerable<Order>> GetOrdersByUserIdAsync(int userId);
+    Task<Order> GetOrderByIdAsync(Guid id);
+    Task<IEnumerable<Order>> GetOrdersByUserIdAsync(Guid userId);
     Task<IEnumerable<Order>> GetOrdersByOrderStatusAsync(string status);
     Task<Order> CreateOrderAsync(Order order);
-    Task<string> UpdateOrderStatus(int orderId, string newStatus);
-    Task<bool> DeleteOrderById(int id);
+    Task<string> UpdateOrderStatus(Guid orderId, string newStatus);
+    Task<bool> DeleteOrderById(Guid id);
 }
