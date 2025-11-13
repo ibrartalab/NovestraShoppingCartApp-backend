@@ -19,6 +19,7 @@ This Shopping App is a full-stack assignment built with a Clean Architecture bac
 - **Database**: PostgreSQL (production) / SQL Server or SQLite for dev
 - **Auth**: JWT-based auth (Auth0 optional) with refresh tokens
 - **Testing**: xUnit for backend, Jest + React Testing Library for frontend
+![useronboardingflow_nshppoingcartapp](https://github.com/user-attachments/assets/e7169603-88f4-401e-9523-d36c8b4722e4)
 
 ---
 
