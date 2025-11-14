@@ -20,7 +20,7 @@ public class UserRepository : IUserRepository
 
         return allUsers;
     }
-    public async Task<User> GetUserByIdAsync(int id)
+    public async Task<User> GetUserByIdAsync(Guid id)
     {
         var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Id == id);
         return user;
@@ -48,7 +48,7 @@ public class UserRepository : IUserRepository
             await _dbContext.SaveChangesAsync();
         }
     }
-    public async Task DeleteUserAsync(int id)
+    public async Task DeleteUserAsync(Guid id)
     {
         var userExist = await _dbContext.Users.FirstOrDefaultAsync(u => u.Id == id);
 
