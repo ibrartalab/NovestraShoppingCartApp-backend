@@ -16,12 +16,14 @@ public class AuthService(IUserRepository userRepository, IJwtService jwtService)
         return hasedPass;
     }
 
+    // Verify the password against the stored hash
     private bool VerifyPassword(string password, string passwordHash)
     {
         var hashedPassword = HashPassword(password);
         return BCrypt.Net.BCrypt.Verify(password, passwordHash);
     }
 
+    // Register a new user
     public async Task<AuthResponseDto> RegisterUser(RegisterRequestDto registerRequestDto)
     {
         var existingUser = await userRepository.GetUserByEmailAsync(registerRequestDto.Email);
@@ -55,6 +57,7 @@ public class AuthService(IUserRepository userRepository, IJwtService jwtService)
         };
     }
 
+    // Login an existing user
     public async Task<AuthResponseDto> LoginUser(LoginRequestDto loginRequest)
     {
         var user = await userRepository.GetUserByEmailAsync(loginRequest.Email);

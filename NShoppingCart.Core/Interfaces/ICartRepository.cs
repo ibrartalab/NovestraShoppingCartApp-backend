@@ -10,6 +10,7 @@ namespace NShoppingCart
         Task<Cart> CreateCartAsync(Cart cart);
         Task<bool> DeleteCartAsync(Guid cartId);
         Task<bool> ClearCartAsync(Guid cartId);
+        Task<Cart>UpdateCartAsync(Cart cart);
 
         // CartItem operations
         Task<IEnumerable<CartItem>> GetCartItemsByCartIdAsync(Guid cartId);
