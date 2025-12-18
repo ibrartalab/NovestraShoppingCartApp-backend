@@ -62,6 +62,13 @@ namespace NShoppingCart
             return true;
         }
 
+        public async Task<Cart> UpdateCartAsync(Cart cart)
+        {
+            _dbContext.Carts.Update(cart);
+            await _dbContext.SaveChangesAsync();
+            return cart;
+        }
+
         // CartItem operations
         public async Task<IEnumerable<CartItem>> GetCartItemsByCartIdAsync(Guid cartId)
         {
