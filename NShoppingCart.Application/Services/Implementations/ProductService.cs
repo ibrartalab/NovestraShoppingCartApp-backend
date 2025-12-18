@@ -1,14 +1,9 @@
 using System;
 using NShoppingCart.Application.Services.Interfaces;
-
-namespace NShoppingCart.Application.Services.Implementations;
-
-public class ProductService(IProductRepository productRepository) : IProductService
-{
-
-}
 using NShoppingCart.Core.Entities;
 using NShoppingCart.Core.Interfaces;
+
+namespace NShoppingCart.Application.Services.Implementations;
 
 public class ProductService : IProductService
 {
