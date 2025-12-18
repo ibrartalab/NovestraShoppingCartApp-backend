@@ -1,8 +1,11 @@
-using System;
+using NShoppingCart.Core.Entities;
 
-namespace NShoppingCart.Application.Services.Interfaces;
+namespace NShoppingCart.Core.Interfaces.Services;
 
 public interface IUserService
 {
-
+    Task<User> GetUserProfileAsync(int id);
+    Task UpdateProfileAsync(User user);
+    Task DeactivateUserAsync(int id);
+    Task<IEnumerable<User>> GetUsersByRoleAsync(string role);
 }

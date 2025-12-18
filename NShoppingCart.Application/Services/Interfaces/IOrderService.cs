@@ -1,19 +1,9 @@
-using System;
 using NShoppingCart.Core.Entities;
 
-namespace NShoppingCart.Application.Services.Interfaces;
+namespace NShoppingCart.Core.Interfaces.Services;
 
 public interface IOrderService
 {
-    Task<Order> GetOrderByIdAsync(Guid id);
-
-    Task<IEnumerable<Order>> GetOrdersByUserIdAsync(Guid userId);
-
-    Task<IEnumerable<Order>> GetOrdersByOrderStatusAsync(string status);
-
-    Task<Order> CreateOrderAsync(Order orderDto);
-
-    Task<string> UpdateOrderStatus(Guid orderId, string newStatus);
-
-    Task<bool> DeleteOrderById(Guid id);
+    Task<Order> CheckoutAsync(Guid userId, string shippingAddress, string? notes);
+    Task<IEnumerable<Order>> GetUserOrderHistoryAsync(Guid userId);
 }
