@@ -1,3 +1,5 @@
+using NShoppingCart.Core.Entities;
+
 namespace NShoppingCart.Core.Interfaces.Services;
 
 public interface IOrderService

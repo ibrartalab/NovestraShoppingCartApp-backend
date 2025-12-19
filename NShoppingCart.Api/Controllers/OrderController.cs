@@ -1,10 +1,13 @@
+using Microsoft.AspNetCore.Mvc;
+using NShoppingCart.Core.Interfaces.Services;
+
 [ApiController]
 [Route("api/[controller]")]
-public class OrdersController : ControllerBase
+public class OrderController : ControllerBase
 {
     private readonly IOrderService _orderService;
 
-    public OrdersController(IOrderService orderService)
+    public OrderController(IOrderService orderService)
     {
         _orderService = orderService;
     }

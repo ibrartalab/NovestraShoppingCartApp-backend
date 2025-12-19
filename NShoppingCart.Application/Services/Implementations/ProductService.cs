@@ -2,6 +2,7 @@ using System;
 using NShoppingCart.Application.Services.Interfaces;
 using NShoppingCart.Core.Entities;
 using NShoppingCart.Core.Interfaces;
+using NShoppingCart.Core.Interfaces.Services;
 
 namespace NShoppingCart.Application.Services.Implementations;
 
@@ -43,4 +44,5 @@ public class ProductService : IProductService
 
     public async Task DeleteProductAsync(Guid id) =>
         await _productRepository.DeleteProductAsync(id);
+
 }

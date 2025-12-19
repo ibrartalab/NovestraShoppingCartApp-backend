@@ -1,6 +1,8 @@
 using NShoppingCart.Core.Entities;
 using NShoppingCart.Core.Interfaces;
 using NShoppingCart.Core.Enums;
+using NShoppingCart.Core.Interfaces.Services;
+using NShoppingCart;
 
 public class OrderService : IOrderService
 {

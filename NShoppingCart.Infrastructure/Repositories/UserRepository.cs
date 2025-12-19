@@ -1,62 +1,75 @@
-using System;
-using NShoppingCart.Core.Interfaces;
-using NShoppingCart.Core.Entities;
 using Microsoft.EntityFrameworkCore;
+using NovestraTodo.Core.Interfaces;
+using NShoppingCart.Core.Entities;
+using NShoppingCart.Core.Interfaces;
 using NShoppingCart.Infrastructure.Data;
 
-namespace NShoppingCart.Infrastructure.Repositories;
-
-public class UserRepository : IUserRepository
+namespace NShoppingCart.Infrastructure.Repositories
 {
-    private readonly NShoppingCartDbContext _dbContext;
-
-    public UserRepository(NShoppingCartDbContext dbContext)
+    public class UserRepository(NShoppingCartDbContext dbContext) : IUserRepository
     {
-        _dbContext = dbContext;
-    }
-    public async Task<IEnumerable<User>> GetAllUsersAsync()
-    {
-        var allUsers = await _dbContext.Users.ToListAsync();
-
-        return allUsers;
-    }
-    public async Task<User> GetUserByIdAsync(Guid id)
-    {
-        var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Id == id);
-        return user;
-    }
-    public async Task<User> GetUserByEmailAsync(string email)
-    {
-        var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == email);
-        return user;
-    }
-    public async Task AddUserAsync(User user)
-    {
-        await _dbContext.Users.AddAsync(user);
-        await _dbContext.SaveChangesAsync();
-    }
-    public async Task UpdateUserAsync(User user)
-    {
-        var userExist = await _dbContext.Users.FirstOrDefaultAsync(u => u.Id == user.Id);
-
-        if (userExist is not null)
+        // Get all the users list from the db
+        public async Task<IEnumerable<User>> GetAllUsersAsync()
         {
-            userExist.FirstName = user.FirstName;
-            userExist.LastName = user.LastName;
-            userExist.PhoneNumber = user.PhoneNumber;
-
-            await _dbContext.SaveChangesAsync();
+            return await dbContext.Users.ToListAsync();
         }
-    }
-    public async Task DeleteUserAsync(Guid id)
-    {
-        var userExist = await _dbContext.Users.FirstOrDefaultAsync(u => u.Id == id);
-
-        if (userExist is not null)
+        // Get user by id
+        public async Task<User?> GetUserByIdAsync(int id)
         {
-            _dbContext.Remove(userExist);
+            return await dbContext.Users.FirstOrDefaultAsync(user => user.Id == id);
 
-            await _dbContext.SaveChangesAsync();
+        }
+
+        // // Get user by username
+        // public async Task<User?> GetUserByUsernameAsync(string username)
+        // {
+        //     return await dbContext.Users.FirstOrDefaultAsync(user => user.UserName == username);
+        // }
+
+        // Add a new user
+        public async Task<User> AddUserAsync(User entity)
+        {
+            entity.Id = Random.Shared.Next(1, 1000000);
+            dbContext.Users.Add(entity);
+
+            await dbContext.SaveChangesAsync();
+
+            return entity;
+        }
+
+        // Update a user
+        public async Task<User> UpdateUserAsync(int userId, User entity)
+        {
+            var user = await dbContext.Users.FirstOrDefaultAsync(user => user.Id == userId);
+
+            if (user is not null)
+            {
+                user.FirstName = entity.FirstName;
+                user.LastName = entity.LastName;
+                user.Email = entity.Email;
+
+                await dbContext.SaveChangesAsync();
+
+                return user;
+            }
+
+            return null;
+        }
+
+        // Delete a user
+        public async Task<bool> DeleteUserAsync(int userId)
+        {
+            var user = await dbContext.Users.FirstOrDefaultAsync(user => user.Id == userId);
+
+            if (user is not null)
+            {
+                dbContext.Remove(user);
+
+                return await dbContext.SaveChangesAsync() > 0;
+            }
+
+            return false;
+
         }
     }
 }
