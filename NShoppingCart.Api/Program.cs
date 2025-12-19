@@ -3,11 +3,13 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using NShoppingCart.Api;
-using NShoppingCart.Api.Middlewares;
+using NovestraTodo.Core.Interfaces;
+using NShoppingCart.Api.Middlewars;
+using NShoppingCart.Application.Services.Implementation;
 using NShoppingCart.Application.Services.Implementations;
 using NShoppingCart.Application.Services.Interfaces;
 using NShoppingCart.Core.Interfaces;
+using NShoppingCart.Core.Interfaces.Services;
 using NShoppingCart.Infrastructure.Data;
 using NShoppingCart.Infrastructure.ExternalServices.JwtGeneration;
 using NShoppingCart.Infrastructure.Repositories;
@@ -30,7 +32,7 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
-builder.Services.AddScoped<ICartService, CartService>();
+
 
 builder.Services.AddDbContext<NShoppingCartDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 

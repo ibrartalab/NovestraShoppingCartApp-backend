@@ -4,11 +4,21 @@ using NShoppingCart.Application.Services.Interfaces;
 using NShoppingCart.Core.Interfaces;
 using NShoppingCart.Infrastructure.ExternalServices.JwtGeneration;
 using BCrypt.Net;
+using NovestraTodo.Core.Interfaces;
 
 namespace NShoppingCart.Application.Services.Implementations;
 
-public class AuthService(IUserRepository userRepository, IJwtService jwtService) : IAuthService
+public class AuthService:IAuthService
 {
+    private readonly IUserRepository _userRepository;
+    private readonly IJwtService _jwtService;
+
+    public AuthService(IUserRepository userRepository, IJwtService jwtService)
+    {
+        _userRepository = userRepository;
+        _jwtService = jwtService;
+    }
+
     private string HashPassword(string password)
     {
         // Simple hash for demonstration purposes only. Use a secure hashing algorithm in production.
@@ -26,7 +36,7 @@ public class AuthService(IUserRepository userRepository, IJwtService jwtService)
     // Register a new user
     public async Task<AuthResponseDto> RegisterUser(RegisterRequestDto registerRequestDto)
     {
-        var existingUser = await userRepository.GetUserByEmailAsync(registerRequestDto.Email);
+        var existingUser = await _userRepository.GetUserByEmailAsync(registerRequestDto.Email);
 
         if (existingUser is not null)
         {
@@ -42,8 +52,8 @@ public class AuthService(IUserRepository userRepository, IJwtService jwtService)
             IsActive = true
         };
 
-        await userRepository.AddUserAsync(newUser);
-        var token = await jwtService.GenerateToken(newUser);
+        await _userRepository.AddUserAsync(newUser);
+        var token = await _jwtService.GenerateToken(newUser);
         return new AuthResponseDto
         {
             Token = token,
@@ -60,14 +70,14 @@ public class AuthService(IUserRepository userRepository, IJwtService jwtService)
     // Login an existing user
     public async Task<AuthResponseDto> LoginUser(LoginRequestDto loginRequest)
     {
-        var user = await userRepository.GetUserByEmailAsync(loginRequest.Email);
+        var user = await _userRepository.GetUserByEmailAsync(loginRequest.Email);
 
         if (user is null || !VerifyPassword(loginRequest.Password, user.PasswordHash))
         {
             throw new Exception("Invalid email or password.");
         }
 
-        var token = await jwtService.GenerateToken(user);
+        var token = await _jwtService.GenerateToken(user);
 
         return new AuthResponseDto
         {

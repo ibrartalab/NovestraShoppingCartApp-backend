@@ -77,7 +77,7 @@ namespace NShoppingCart
                 .Where(ci => ci.CartId == cartId);
             return await Task.FromResult(cartItems.AsEnumerable());
         }
-        public async Task<CartItem?> GetCartItemByIdAsync(Guid cartItemId)
+        public async Task<CartItem?> GetCartItemByIdAsync(int cartItemId)
         {
             return await _dbContext.CartItems
                 .Include(ci => ci.Product)

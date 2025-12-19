@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using NovestraTodo.Core.Interfaces;
+using NShoppingCart.Application.DTOs;
 using NShoppingCart.Core.Entities;
 using NShoppingCart.Core.Interfaces;
 using NShoppingCart.Infrastructure.Data;
@@ -18,6 +19,20 @@ namespace NShoppingCart.Infrastructure.Repositories
         {
             return await dbContext.Users.FirstOrDefaultAsync(user => user.Id == id);
 
+        }
+
+        public async Task<User?> GetUserByEmailAsync(string email)
+        {
+            return await dbContext.Users
+                .Where(user => user.Email == email)
+                .Select(user => new User
+                {
+                    Id = user.Id,
+                    Email = user.Email,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName
+                })
+                .FirstOrDefaultAsync();
         }
 
         // // Get user by username
