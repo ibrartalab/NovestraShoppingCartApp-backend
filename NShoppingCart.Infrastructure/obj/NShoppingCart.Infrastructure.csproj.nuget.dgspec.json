@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Infrastructure/NShoppingCart.Infrastructure.csproj": {}
+    "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\NShoppingCart.Infrastructure.csproj": {}
   },
   "projects": {
-    "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Application/NShoppingCart.Application.csproj": {
+    "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Application\\NShoppingCart.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Application/NShoppingCart.Application.csproj",
+        "projectUniqueName": "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Application\\NShoppingCart.Application.csproj",
         "projectName": "NShoppingCart.Application",
-        "projectPath": "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Application/NShoppingCart.Application.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Application/obj/",
+        "projectPath": "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Application\\NShoppingCart.Application.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Core/NShoppingCart.Core.csproj": {
-                "projectPath": "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Core/NShoppingCart.Core.csproj"
+              "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj": {
+                "projectPath": "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj"
               }
             }
           }
@@ -41,7 +41,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -63,26 +64,40 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.21, 8.0.21]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.21, 8.0.21]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.21, 8.0.21]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.415/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Core/NShoppingCart.Core.csproj": {
+    "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Core/NShoppingCart.Core.csproj",
+        "projectUniqueName": "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj",
         "projectName": "NShoppingCart.Core",
-        "projectPath": "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Core/NShoppingCart.Core.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Core/obj/",
+        "projectPath": "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -105,7 +120,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -121,26 +137,40 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.21, 8.0.21]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.21, 8.0.21]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.21, 8.0.21]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.415/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Infrastructure/NShoppingCart.Infrastructure.csproj": {
+    "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\NShoppingCart.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Infrastructure/NShoppingCart.Infrastructure.csproj",
+        "projectUniqueName": "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\NShoppingCart.Infrastructure.csproj",
         "projectName": "NShoppingCart.Infrastructure",
-        "projectPath": "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Infrastructure/NShoppingCart.Infrastructure.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Infrastructure/obj/",
+        "projectPath": "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\NShoppingCart.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -152,11 +182,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Application/NShoppingCart.Application.csproj": {
-                "projectPath": "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Application/NShoppingCart.Application.csproj"
+              "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Application\\NShoppingCart.Application.csproj": {
+                "projectPath": "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Application\\NShoppingCart.Application.csproj"
               },
-              "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Core/NShoppingCart.Core.csproj": {
-                "projectPath": "/workspaces/NovestraShoppingCartApp-backend/NShoppingCart.Core/NShoppingCart.Core.csproj"
+              "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj": {
+                "projectPath": "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Core\\NShoppingCart.Core.csproj"
               }
             }
           }
@@ -170,7 +200,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -202,12 +233,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.21, 8.0.21]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.21, 8.0.21]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.21, 8.0.21]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.415/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

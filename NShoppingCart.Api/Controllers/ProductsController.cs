@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Mvc;
+using NShoppingCart.Core.Interfaces.Services;
+
 [ApiController]
 [Route("api/[controller]")]
 public class ProductsController : ControllerBase
@@ -10,7 +13,10 @@ public class ProductsController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAll() => Ok(await _productService.GetCatalogAsync());
+    public async Task<IActionResult> GetAll()
+    {
+        return Ok(await _productService.GetCatalogAsync());
+    }
 
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(Guid id) => Ok(await _productService.GetProductDetailsAsync(id));
