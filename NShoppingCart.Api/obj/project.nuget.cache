@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Aa9BntfKn1Q=",
+  "success": true,
+  "projectFilePath": "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Api\\NShoppingCart.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.10\\microsoft.aspnetcore.openapi.9.0.10.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

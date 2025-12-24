@@ -238,3 +238,5 @@ npm test
 ### Final notes
 - This doc mirrors the structure and detail level of your reference PDF but is specific to the project scaffold we discussed earlier. Use this as the canonical project documentation, commit it to the `docs/` folder, and keep it up to date with architectural decisions and API changes.
 
+
+
