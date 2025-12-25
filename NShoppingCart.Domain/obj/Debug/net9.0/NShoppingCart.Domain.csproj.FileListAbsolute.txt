@@ -1,0 +1,12 @@
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Domain\bin\Debug\net9.0\NShoppingCart.Domain.deps.json
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Domain\bin\Debug\net9.0\NShoppingCart.Domain.dll
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Domain\bin\Debug\net9.0\NShoppingCart.Domain.pdb
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Domain\obj\Debug\net9.0\NShoppingCart.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Domain\obj\Debug\net9.0\NShoppingCart.Domain.AssemblyInfoInputs.cache
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Domain\obj\Debug\net9.0\NShoppingCart.Domain.AssemblyInfo.cs
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Domain\obj\Debug\net9.0\NShoppingCart.Domain.csproj.CoreCompileInputs.cache
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Domain\obj\Debug\net9.0\NShoppingCart.Domain.sourcelink.json
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Domain\obj\Debug\net9.0\NShoppingCart.Domain.dll
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Domain\obj\Debug\net9.0\refint\NShoppingCart.Domain.dll
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Domain\obj\Debug\net9.0\NShoppingCart.Domain.pdb
+E:\Novestra-.NET\Projects\ShoppingCart\NovestraShoppingCartApp-backend\NShoppingCart.Domain\obj\Debug\net9.0\ref\NShoppingCart.Domain.dll

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Qh+Op2XLZvI=",
+  "dgSpecHash": "78GpWDT1Ezk=",
   "success": true,
   "projectFilePath": "E:\\Novestra-.NET\\Projects\\ShoppingCart\\NovestraShoppingCartApp-backend\\NShoppingCart.Application\\NShoppingCart.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.1\\microsoft.extensions.dependencyinjection.abstractions.10.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
