@@ -18,7 +18,7 @@ public class OrderController : ControllerBase
     [HttpPost("checkout/{userId}")]
     public async Task<IActionResult> Checkout(int userId, [FromBody] Order request)
     {
-        var order = await _orderService.PlaceOrderAsync(userId, request.ShippingAddress, request.Notes);
+        var order = await _orderService.PlaceOrderAsync(userId, request.ShippingAddress);
         return Ok(order);
     }
 

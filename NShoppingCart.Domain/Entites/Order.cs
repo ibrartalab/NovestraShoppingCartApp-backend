@@ -1,6 +1,5 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using NShoppingCart.Core.Enums;
 using NShoppingCart.Core.Entities;
 
 namespace NShoppingCart.Core.Entities;
@@ -22,14 +21,11 @@ public class Order : BaseEntity
 
     [Required]
     [StringLength(50)]
-    public string Status { get; set; } = OrderStatus.Pending;
+    public string Status { get; set; } = string.Empty;
 
     [Required]
     [StringLength(50)]
     public string ShippingAddress { get; set; } = string.Empty;
-
-    [StringLength(500)]
-    public string? Notes { get; set; }
 
     // Navigation properties
     public User User { get; set; } = null!;

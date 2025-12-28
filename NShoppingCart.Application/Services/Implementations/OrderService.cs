@@ -1,6 +1,5 @@
 using NShoppingCart.Core.Entities;
 using NShoppingCart.Core.Interfaces;
-using NShoppingCart.Core.Enums;
 using NShoppingCart.Core.Interfaces.Services;
 using NShoppingCart;
 
@@ -20,7 +19,7 @@ public class OrderService : IOrderService
         _productRepository = prodRepo;
     }
 
-    public async Task<Order> PlaceOrderAsync(int userId, string shippingAddress, string? notes)
+    public async Task<Order> PlaceOrderAsync(int userId, string shippingAddress)
     {
         // 1. Retrieve the cart and its items
         var cart = await _cartRepository.GetCartByUserIdAsync(userId);
@@ -35,9 +34,8 @@ public class OrderService : IOrderService
             UserId = userId,
             OrderNumber = GenerateOrderNumber(),
             ShippingAddress = shippingAddress,
-            Notes = notes,
             OrderDate = DateTime.UtcNow,
-            Status = OrderStatus.Pending,
+            Status = "Pending",
             TotalAmount = 0 // Will calculate below
         };
 
@@ -92,7 +90,7 @@ public class OrderService : IOrderService
         var order = await _orderRepository.GetOrderByIdAsync(orderId);
         if (order == null) return false;
 
-        if (order.Status != OrderStatus.Pending)
+        if (order.Status != "Pending")
         {
             throw new InvalidOperationException("Only pending orders can be cancelled.");
         }

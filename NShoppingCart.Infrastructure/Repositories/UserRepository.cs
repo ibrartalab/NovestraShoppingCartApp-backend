@@ -40,8 +40,8 @@ namespace NShoppingCart.Infrastructure.Repositories
 
             if (user is not null)
             {
-                user.FirstName = entity.FirstName;
-                user.LastName = entity.LastName;
+                user.FullName = entity.FullName;
+                user.UserName = entity.UserName;
                 user.Email = entity.Email;
 
                 await dbContext.SaveChangesAsync();

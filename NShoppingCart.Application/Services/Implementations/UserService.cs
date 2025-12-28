@@ -22,10 +22,10 @@ namespace NShoppingCart.Application.Services.Implementation
             var userDtos = users.Select(user => new UserDto
             {
                 Id = user.Id,
-                FirstName = user.FirstName,
-                LastName = user.LastName,
-               
+                FullName = user.FullName,
+                UserName = user.UserName,
                 Email = user.Email,
+                CreatedAt = new DateTime() // Assuming CreatedAt is a DateTime property in User entity
             });
             return userDtos;
         }
@@ -36,10 +36,10 @@ namespace NShoppingCart.Application.Services.Implementation
             var userDto = user == null ? null : new UserDto
             {
                 Id = user.Id,
-                FirstName = user.FirstName,
-                LastName = user.LastName,
-                
+                FullName = user.FullName,
+                UserName = user.UserName,
                 Email = user.Email,
+                CreatedAt = new DateTime() // Assuming CreatedAt is a DateTime property in User entity
             };
             return userDto;
         }
@@ -57,10 +57,10 @@ namespace NShoppingCart.Application.Services.Implementation
             var userDto = new UserDto
             {
                 Id = newUser.Id,
-                FirstName = newUser.FirstName,
-                LastName = newUser.LastName,
-              
+                FullName = newUser.FullName,
+                UserName = newUser.UserName,
                 Email = newUser.Email,
+                CreatedAt = newUser.CreatedAt,
             };
             return userDto;
         }
@@ -76,9 +76,10 @@ namespace NShoppingCart.Application.Services.Implementation
             var userDto = new UserDto
             {
                 Id = updatedUser.Id,
-                FirstName = updatedUser.FirstName,
-                LastName = updatedUser.LastName,
+                FullName = updatedUser.FullName,
+                UserName = updatedUser.UserName,
                 Email = updatedUser.Email,
+                CreatedAt = updatedUser.CreatedAt,
             };
             return userDto;
         }

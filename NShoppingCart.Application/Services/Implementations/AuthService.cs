@@ -45,11 +45,9 @@ public class AuthService:IAuthService
         var newUser = new Core.Entities.User
         {
             Email = registerRequestDto.Email,
-            FirstName = registerRequestDto.FirstName,
-            LastName = registerRequestDto.LastName,
+            FullName = registerRequestDto.FullName,
+            UserName = registerRequestDto.UserName,
             PasswordHash = HashPassword(registerRequestDto.Password),
-            Role = "User",
-            IsActive = true
         };
 
         await _userRepository.AddUserAsync(newUser);
@@ -61,8 +59,10 @@ public class AuthService:IAuthService
             {
                 Id = newUser.Id,
                 Email = newUser.Email,
-                FirstName = newUser.FirstName,
-                LastName = newUser.LastName
+                FullName = newUser.FullName,
+                UserName = newUser.UserName,
+                CreatedAt = newUser.CreatedAt
+
             }
         };
     }
@@ -86,8 +86,9 @@ public class AuthService:IAuthService
             {
                 Id = user.Id,
                 Email = user.Email,
-                FirstName = user.FirstName,
-                LastName = user.LastName
+                FullName = user.FullName,
+                UserName = user.UserName,
+                CreatedAt = user.CreatedAt
             }
         };
     }

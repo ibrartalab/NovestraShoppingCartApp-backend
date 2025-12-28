@@ -14,17 +14,17 @@ namespace NShoppingCart.Api.Controllers
 
         //Register a user from this endpoint
         [HttpPost("register")]
-        public async Task<ActionResult<AuthResponseDto>> Register([FromBody] RegisterRequestDto User)
+        public async Task<ActionResult<AuthResponseDto>> Register([FromBody] RegisterRequestDto request)
         {
-            var result = await authService.RegisterUser(User);
+            var result = await authService.RegisterUser(request);
 
             return Ok(result);
         }
         //Login a user and give acess from this endpoint
         [HttpPost("login")]
-        public async Task<ActionResult<AuthResponseDto>> Login([FromBody] LoginRequestDto User)
+        public async Task<ActionResult<AuthResponseDto>> Login([FromBody] LoginRequestDto request)
         {
-            var result = await authService.LoginUser(User);
+            var result = await authService.LoginUser(request);
             return Ok(result);
         }
 
